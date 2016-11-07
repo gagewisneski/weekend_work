@@ -3,7 +3,15 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-
+  letters = string.chars
+  count = -1
+  length = string.length
+  reverse_letters = []
+  length.times do
+    reverse_letters << letters[count]
+    count -= 1
+  end
+  return reverse_letters.join
 end
 
 # Driver code - don't touch anything below this line.
